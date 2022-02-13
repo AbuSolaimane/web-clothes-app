@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from 'src/app/models/product.model';
 import { ProductService } from 'src/app/services/product.service';
 
@@ -11,7 +12,7 @@ export class ProductsComponent implements OnInit {
 
   products?: Product[];
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private router: Router) { }
 
   ngOnInit(): void {
 
@@ -61,6 +62,14 @@ export class ProductsComponent implements OnInit {
     this.productService.deleteProduct(id).subscribe(data => {
       this.getAllProducts();
     })
+  }
+
+  onNewProduct() {
+    this.router.navigate(['/add']);
+  }
+
+  onEdit(id: number) {
+    this.router.navigate(['/edit/'+id]);
   }
 
 }

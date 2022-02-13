@@ -15,6 +15,14 @@
       "quantity": 200,
       "selected": false,
       "available": true
+    },
+    {
+      "name": "Hp",
+      "price": "10000",
+      "quantity": "400",
+      "selected": true,
+      "available": true,
+      "id": 3
     }
   ]
 }

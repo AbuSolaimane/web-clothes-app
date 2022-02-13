@@ -42,8 +42,9 @@ export class ProductService {
     return this.http.put<Product>(host + "/products/" + product.id, product);
   }
 
-  createProduct(product: Product) {
-
+  createProduct(product: Product): Observable<Product> {
+    let host = environment.host;
+    return this.http.post<Product>(host + "/products", product);
   }
 
   updateProduct(id: number, product: Product) {
