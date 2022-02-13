@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "T-shirt",
+      "price": 50,
+      "quantity": 100,
+      "selected": false,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "computer",
+      "price": 10000,
+      "quantity": 200,
+      "selected": false,
+      "available": true
+    }
+  ]
+}
