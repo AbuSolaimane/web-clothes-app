@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "id": 1,
       "name": "T-shirt",
       "price": 50,
       "quantity": 100,
       "selected": false,
-      "available": true
+      "available": true,
+      "id": 1
     },
     {
       "id": 2,
@@ -17,7 +17,7 @@
       "available": true
     },
     {
-      "name": "Hp",
+      "name": "Acer",
       "price": "10000",
       "quantity": "400",
       "selected": true,

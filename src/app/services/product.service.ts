@@ -48,7 +48,8 @@ export class ProductService {
   }
 
   updateProduct(id: number, product: Product) {
-
+    let host = environment.host;
+    return this.http.put<Product>(host + "/products/" + id, product);
   }
 
   deleteProduct(id: number) : Observable<void> {
